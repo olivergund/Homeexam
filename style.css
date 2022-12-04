@@ -343,8 +343,12 @@ ul{
      .accesibility-grid{
         margin-top: 30px;
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 40vw);
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+        'welcome topical'
+        'booking menu'
+        'text media';
         grid-gap: 50px;
         border-radius: 30px;
      }
@@ -357,28 +361,44 @@ ul{
 
      .img-welcome{
         width: 100%; 
-        height: 85%; 
+        height: 100%; 
         border-radius: 20px;
+        grid-area:welcome;
      }
-     .img-topical-booking{
+     .img-meny{
+        width: 100%; 
+        height: 100%; 
+        border-radius: 20px;
+        grid-area:menu;
+     }
+     .img-topical{
         width: 100%;
         height: 100%;
         border-radius: 20px;
+        grid-area:topical;
+     }
+     .img-booking{
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        grid-area:booking;
      }
      .text-access{
         color: black;
         font-size: 20px;
+        grid-area:text;
      }
      .image-media-booking{
         width: 100%;
         height: 100%;
         border-radius: 10px;
+        grid-area:media;
      }
      .image-media-access{
         width: 100%;
         height: 100%;
         border-radius: 10px;
-        
+        grid-area:media;
      }
  /*Accessibility*/
 
@@ -396,6 +416,19 @@ ul{
         
     }
     @media (max-width: 800px){
+        /*https://www.youtube.com/watch?v=68O6eOGAGqA*/
+        /*Brukte dette for å skalere divene riktig*/
+        .accesibility-grid{
+            grid-template-columns:1fr;
+            grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-areas:
+            'welcome'
+            'topical'
+            'booking'
+            'menu'
+            'text'
+            'media'
+        }
         .grid-container-booking{ grid-template-areas:
             'header'
             'booking'
