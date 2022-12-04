@@ -340,6 +340,9 @@ html{
   font-size: 30px;
   place-self: center;
 }
+ul{
+    padding-left:0px;
+}
 /*Menu*/
 
 
