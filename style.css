@@ -1,0 +1,385 @@
+*{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+} 
+body{
+    background-image: url(Bilder/background-blurry-restaurant-shop-interior_1203-4031.jpeg);
+    background-size: cover;
+
+}
+/*header*/
+.over { 
+    
+    width: auto;
+    background-image: url(Bilder/restaurant-interior_1127-3394.jpeg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-color:rgba(255,255,255, 0.9);
+    grid-area: header;
+    width: 100%;
+ }
+html{
+        scroll-behavior: smooth;
+    }
+.nav-links{
+    grid-area: over;
+    text-align: center;
+}
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 20px;
+    position: relative;
+}
+.nav-links ul li a{
+    color:white;
+    text-decoration: none;
+    font-size: 30px;
+
+}
+.nav-links ul li ::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: white;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover ::after{
+    width: auto;
+}
+/*header*/
+
+/*Welcomepage*/
+.grid-container{
+    display: grid;
+    grid-gap: 100px;
+    grid-template-areas:
+    "header"
+    "velkommen" 
+    "meny"
+    "booking"
+    "footer";
+           
+}
+.grid-container > div{
+    background-color:rgba(255,255,255, 0.9); opacity: 80%;  
+    place-self: center;
+    text-align: center;
+
+}
+
+.velkommen-tekst{
+    grid-area: velkommen;
+    width: 50%;
+}
+
+.velkommen-meny{
+    grid-area: meny;
+    width: 50%;
+    
+}
+
+
+
+.velkommen-booking{
+    grid-area: booking;
+    width: 50%;
+    
+}
+.velkommen-knapp{
+    display: inline-block;
+    text-decoration: none; 
+    color: white;
+    padding: 5px 34px; 
+    background: transparent;
+    position: center;
+    cursor: pointer;
+    font-size: 30px;
+    background-color:black
+   
+}
+.knapp:hover{
+    border: 0.5px solid;
+    background: burlywood;
+    transition: 1s;
+
+}
+
+
+.img {
+    width: 100%;
+    height: 100%;  
+}
+
+.Overskrift{
+    font-size: 70px; 
+}
+
+.Overskrift2{
+    font-size: 50px;
+    
+}
+
+.tekst{
+    font-size: 30px; 
+}
+/*Welcomepage*/
+
+/*booking*/
+.grid-container-booking {
+    display: grid;
+    grid-template-areas:
+      'header header header header header header'
+      'booking booking booking info info info'
+      'footer footer footer footer footer footer';
+    gap: 10px;
+    padding: 10px;
+    justify-content: space-around;
+  }
+
+/*Grid-til-booking-side*/
+  .grid-container-booking > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+  .info { 
+    border-style: solid; 
+    background-color:rgba(255,255,255, 0.9);
+    border-radius: 30px;
+    max-width: 100%;
+    grid-area: info; }
+
+/*Bookingboks-booking*/
+.booking {
+    border-style: solid; 
+    background-color:rgba(255,255,255, 0.9);
+    border-radius: 30px;
+    max-width: 100%;
+    grid-area: booking; }
+
+
+/*booking*/
+
+/*Nedeboks-foralle*/
+.footer {
+    text-align: center; 
+   /* margin: 50px 50px; */
+    background-color:rgba(255,255,255, 0.9);
+    border-radius: 30px;
+    /*padding: 50px;*/
+    grid-area: footer; }
+
+    .knapp{
+        display: inline-block;
+        text-decoration: none; 
+        color: black;
+        padding: 5px 34px; 
+        background: transparent;
+        position: center;
+        cursor: pointer;
+        font-size: 30px;
+    }
+    .knapp:hover{
+        border: 0.5px solid;
+        background: burlywood;
+        transition: 1s;
+
+    }
+    /*booking*/
+
+
+    /*topical*/
+
+    .backgroundimage{
+        background-image: url(Bilder/photo-1504384764586-bb4cdc1707b0.avif);
+        background-size: cover;
+        /* 
+        https://unsplash.com/photos/ourQHRTE2IM , alex kotliarskyi
+        https://unsplash.com/photos/VLGdbl42o84 , Maks key
+        https://unsplash.com/photos/ybUtax1fuoc . Natilyn Hicks
+        https://unsplash.com/photos/vgQFlPq8tVQ , Artem Maltsev
+        */
+    }
+    .flexbox-container1{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        
+    }
+    .flexbox-item1 {
+        width: 1300px;
+        min-height: 200px;
+        margin: 20px;
+        border: 3px;
+        background-image: url(Bilder/photo-1595231861877-9519be503a52.avif);
+        background-position: 10%;
+    }
+    .flexbox-item2 {
+        width: 1300px;
+        min-height: 200px;
+        margin: 20px;
+        border: 3px;
+        background-image: url(Bilder/photo-1622927569053-d7896a1e9c80.avif);
+        background-position: center;
+        
+    }
+    .flexbox-item3 {
+        width: 1300px;
+        height: auto;
+        margin: 20px;
+        border: 3px;
+        background-image: url(Bilder/photo-1565462905102-140e712045aa.avif);
+        background-position: left;
+    }
+    .flexbox-item4 {
+        height: 100px;
+        width: auto;
+        margin: 15px;
+        background-color: beige;
+    }
+    .tekst12{
+        color: white;
+        padding: 40px 40px;
+        font-family:'Roboto', sans-serif;
+        text-shadow: 2px 2px 10px white;
+    }
+    .tekst1{
+        color: white;
+        padding: 40px 40px;
+        font-family:'Roboto', sans-serif;
+        text-shadow: 2px 2px 10px purple;
+    }
+    .tekst2{
+        color: black;
+        padding: 40px 40px;
+        font-family:'Roboto', sans-serif;
+        text-shadow: 2px 2px 15px white;
+    }
+    .tekst-header{
+        color: black;
+        padding: 40px 40px;
+        font-family:'Roboto', sans-serif;
+        font-size: x-large;
+    }
+    .phototext{
+        color: black;
+        font-family:'Roboto', sans-serif;
+    
+    }
+    .backgroundphototext{
+        color: white;
+        font-family:'Roboto', sans-serif;
+        background-color: black;
+    }
+    .background1-4{
+        background-color: black;
+        opacity: 80%;
+    }
+    .backgroundkilder{
+        background-color: white;
+        opacity: 80%;
+    }
+     /*topical*/
+
+     /*MENU*/
+
+.Forretter{
+    grid-area: Forrett;
+    background-color:rgba(255,255,255, 0.9);
+    border-radius: 10px; 
+    place-self: center;
+    width: 50%;
+}
+.Hovedretter{
+    grid-area: Hovedrett;
+    background-color:rgba(255,255,255, 0.9);
+    border-radius: 10px; 
+    width: 50%;
+}
+.Dessert{
+    grid-area: Dessert;
+    background-color:rgba(255,255,255, 0.9);
+    border-radius: 10px; 
+    width: 50%;
+}
+.Bunntekst{
+    grid-area: Bunntekst; 
+    background-color:rgba(255,255,255, 0.9);
+    border-radius: 10px; 
+    word-break:break-all;
+    width: 50%;
+}
+.Bunntekst1{
+    grid-area: Bunntekst1;
+    background-color:rgba(255,255,255, 0.9);
+    border-radius: 10px; 
+    word-break:break-all;
+    width: 50%;
+}
+
+.grid-container-menu{
+    align-content: center;
+    display:grid;
+    grid-template-areas:
+    'header' 
+    'Forrett'
+    'Hovedrett'
+    'Dessert'
+    'Bunntekst'
+    'Bunntekst1';
+    gap: 10px;
+}
+.grid-container-menu > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  font-size: 30px;
+  place-self: center;
+}
+/*Menu*/
+
+
+    /*media, MÅ VÆRE PÅ BUNN*/
+    @media (max-width: 800px){
+        .velkommen-tekst{
+            width: 100%;
+        }
+        .velkommen-meny{
+            width: 100%;
+        }
+        .velkommen-booking{
+            width: 100%;
+        }
+        
+    }
+    @media (max-width: 800px){
+        .grid-container-booking{ grid-template-areas:
+            'header'
+            'booking'
+            'info'
+            'nede'
+            ;}
+    }
+    @media (max-width: 800px){
+        .Forretter{
+            width: 100%;
+        }
+        .Hovedretter{
+            width: 100%;
+        }
+        .Dessert{
+            width: 100%;
+        }
+        .Bunntekst{
+            width: 100%;
+        }
+        .Bunntekst1{
+            width: 100%;
+        }
+        
+    }
+  
