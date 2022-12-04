@@ -21,6 +21,8 @@ body{
 html{
         scroll-behavior: smooth;
     }
+
+/* Kode "nav-links" inspirert av: https://www.youtube.com/watch?v=oYRda7UtuhA */
 .nav-links{
     grid-area: over;
     text-align: center;
@@ -88,6 +90,7 @@ html{
     width: 50%;
     
 }
+/* Kode inspirert av: https: https://www.youtube.com/watch?v=oYRda7UtuhA */
 .velkommen-knapp{
     display: inline-block;
     text-decoration: none; 
@@ -173,6 +176,8 @@ html{
     /*padding: 50px;*/
     grid-area: footer; }
 
+
+/* Kode inspirert av: https: https://www.youtube.com/watch?v=oYRda7UtuhA */
     .knapp{
         display: inline-block;
         text-decoration: none; 
@@ -329,7 +334,7 @@ ul{
 }
 /*Menu*/
 
- /*Accesibility*/
+ /*Accessibility*/
 
      /* https://travishorn.com/responsive-grid-in-2-minutes-with-css-grid-layout-4842a41420fe, kilde 
         https://www.freecodecamp.org/news/how-to-create-an-image-gallery-with-css-grid-e0f0fd666a5c/ , kilde
@@ -375,7 +380,7 @@ ul{
         border-radius: 10px;
         
      }
- /*Accesibility*/
+ /*Accessibility*/
 
     /*media, MÅ VÆRE PÅ BUNN*/
     @media (max-width: 800px){
