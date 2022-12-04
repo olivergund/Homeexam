@@ -7,7 +7,7 @@ body{
 
 }
 /*header*/
-.over { 
+.over {
     
     width: auto;
     background-image: url(Bilder/restaurant-interior_1127-3394.jpeg);
@@ -289,39 +289,17 @@ html{
      /*MENU*/
 
 .Forretter{
-    grid-area: Forrett;
-    background-color:rgba(255,255,255, 0.9);
-    border-radius: 10px; 
-    place-self: center;
+    grid-area: Forrett; 
     width: 50%;
 }
 .Hovedretter{
-    grid-area: Hovedrett;
-    background-color:rgba(255,255,255, 0.9);
-    border-radius: 10px; 
+    grid-area: Hovedrett; 
     width: 50%;
 }
 .Dessert{
-    grid-area: Dessert;
-    background-color:rgba(255,255,255, 0.9);
-    border-radius: 10px; 
+    grid-area: Dessert; 
     width: 50%;
 }
-.Bunntekst{
-    grid-area: Bunntekst; 
-    background-color:rgba(255,255,255, 0.9);
-    border-radius: 10px; 
-    word-break:break-all;
-    width: 50%;
-}
-.Bunntekst1{
-    grid-area: Bunntekst1;
-    background-color:rgba(255,255,255, 0.9);
-    border-radius: 10px; 
-    word-break:break-all;
-    width: 50%;
-}
-
 .grid-container-menu{
     align-content: center;
     display:grid;
@@ -330,8 +308,7 @@ html{
     'Forrett'
     'Hovedrett'
     'Dessert'
-    'Bunntekst'
-    'Bunntekst1';
+    'footer';
     gap: 10px;
 }
 .grid-container-menu > div {
@@ -339,6 +316,7 @@ html{
   text-align: center;
   font-size: 30px;
   place-self: center;
+  border-radius: 10px;
 }
 ul{
     padding-left:0px;
