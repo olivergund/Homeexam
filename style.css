@@ -331,6 +331,7 @@ ul{
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
         grid-template-areas:
+        'header header'
         'welcome topical'
         'booking menu'
         'text media';
@@ -343,47 +344,40 @@ ul{
         text-align: center;
         display: grid;
      }
-
      .img-welcome{
         width: 100%; 
         height: 100%; 
         border-radius: 20px;
-        grid-area:welcome;
+       
      }
      .img-meny{
         width: 100%; 
         height: 100%; 
         border-radius: 20px;
-        grid-area:menu;
      }
      .img-topical{
         width: 100%;
         height: 100%;
         border-radius: 20px;
-        grid-area:topical;
      }
      .img-booking{
         width: 100%;
         height: 100%;
         border-radius: 20px;
-        grid-area:booking;
      }
      .text-access{
         color: black;
         font-size: 20px;
-        grid-area:text;
      }
      .image-media-booking{
         width: 100%;
         height: 100%;
         border-radius: 10px;
-        grid-area:media;
      }
      .image-media-access{
         width: 100%;
         height: 100%;
         border-radius: 10px;
-        grid-area:media;
      }
  /*Accessibility slutt*/
 
@@ -407,6 +401,7 @@ ul{
             grid-template-columns:1fr;
             grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr;
             grid-template-areas:
+            'header'
             'welcome'
             'topical'
             'booking'
