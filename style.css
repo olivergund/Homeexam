@@ -23,6 +23,7 @@ body{
  }
 
  .header-tekst{
+    /*Tekst for kilder til bilder.*/
     font-size: 10px;
     color: white;
     text-align: right;
