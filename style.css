@@ -353,11 +353,11 @@ ul{
     border-radius: 30px;
 }
 
-.accessibility-grid > div{
-    background-color: beige;
-    border-radius: 30px;
-    text-align: center;
-    display: grid;
+.accesscolumns{
+        background-color: beige;
+        border-radius: 30px;
+        text-align: center;
+        display: grid;
 }
 
 .img-welcome{
