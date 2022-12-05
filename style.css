@@ -21,10 +21,7 @@ body{
 html{
         scroll-behavior: smooth;
     }
-
-/* Kode "nav-links" inspirert av: https://www.youtube.com/watch?v=oYRda7UtuhA */
 .nav-links{
-    grid-area: over;
     text-align: center;
 }
 .nav-links ul li {
@@ -69,6 +66,7 @@ html{
     background-color:rgba(255,255,255, 0.9); opacity: 80%;  
     place-self: center;
     text-align: center;
+    border-radius: 10px;
 
 }
 
@@ -90,7 +88,6 @@ html{
     width: 50%;
     
 }
-/* Kode inspirert av: https: https://www.youtube.com/watch?v=oYRda7UtuhA */
 .velkommen-knapp{
     display: inline-block;
     text-decoration: none; 
@@ -103,27 +100,12 @@ html{
     background-color:black
    
 }
-.knapp:hover{
-    border: 0.5px solid;
-    background: burlywood;
-    transition: 1s;
 
-}
-
-
-.img {
-    width: 100%;
-    height: 100%;  
-}
 
 .Overskrift{
     font-size: 70px; 
 }
 
-.Overskrift2{
-    font-size: 50px;
-    
-}
 
 .tekst{
     font-size: 30px; 
@@ -134,27 +116,32 @@ html{
 .grid-container-booking {
     display: grid;
     grid-template-areas:
-      'header header header header header header'
-      'booking booking booking info info info'
-      'footer footer footer footer footer footer';
-    gap: 10px;
+      'header'
+      'booking'
+      'info'
+      'footer';
+    gap: 100px;
     padding: 10px;
     justify-content: space-around;
   }
 
 /*Grid-til-booking-side*/
-  .grid-container-booking > div {
+.grid-container-booking > div {
     background-color: rgba(255, 255, 255, 0.8);
     text-align: center;
     padding: 20px 0;
     font-size: 30px;
+    place-self:center;
   }
+    
   .info { 
     border-style: solid; 
     background-color:rgba(255,255,255, 0.9);
     border-radius: 30px;
     max-width: 100%;
-    grid-area: info; }
+    grid-area: info;
+    width: 50%;
+ }
 
 /*Bookingboks-booking*/
 .booking {
@@ -162,6 +149,7 @@ html{
     background-color:rgba(255,255,255, 0.9);
     border-radius: 30px;
     max-width: 100%;
+    width: 50%;
     grid-area: booking; }
 
 
@@ -176,8 +164,6 @@ html{
     /*padding: 50px;*/
     grid-area: footer; }
 
-
-/* Kode inspirert av: https: https://www.youtube.com/watch?v=oYRda7UtuhA */
     .knapp{
         display: inline-block;
         text-decoration: none; 
@@ -192,8 +178,9 @@ html{
         border: 0.5px solid;
         background: burlywood;
         transition: 1s;
-
+    
     }
+    
     /*booking*/
 
 
@@ -295,17 +282,14 @@ html{
 
 .Forretter{
     grid-area: Forrett;
-    background-color:rgba(255,255,255, 0.9);
     width: 50%;
 }
 .Hovedretter{
     grid-area: Hovedrett;
-    background-color:rgba(255,255,255, 0.9);
     width: 50%;
 }
 .Dessert{
     grid-area: Dessert;
-    background-color:rgba(255,255,255, 0.9);
     width: 50%;
 }
 
@@ -334,7 +318,7 @@ ul{
 }
 /*Menu*/
 
- /*Accessibility*/
+ /*Accesibility*/
 
      /* https://travishorn.com/responsive-grid-in-2-minutes-with-css-grid-layout-4842a41420fe, kilde 
         https://www.freecodecamp.org/news/how-to-create-an-image-gallery-with-css-grid-e0f0fd666a5c/ , kilde
@@ -454,4 +438,3 @@ ul{
         }
         
     }
-  
