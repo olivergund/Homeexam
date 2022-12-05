@@ -18,6 +18,11 @@ body{
     grid-area: header;
     width: 100%;
  }
+ .header-tekst{
+    font-size: 10px;
+    color: white;
+    text-align: right;
+ }
 html{
         scroll-behavior: smooth;
     }
