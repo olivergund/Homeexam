@@ -1,3 +1,5 @@
+/* Hovedkilder: w3schools.com og dev.mozilla.org.
+
 *{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 } 
@@ -9,7 +11,7 @@ body{
 }
 /*header*/
 .header { 
-    
+    /*Headerbilde: https://www.freepik.com/free-photo/restaurant-interior_1243339.htm#query=restaurant&position=3&from_view=searc*/
     width: auto;
     background-image: url(Bilder/restaurant-interior_1127-3394.jpeg);
     background-position: center;
@@ -27,6 +29,9 @@ body{
 html{
         scroll-behavior: smooth;
     }
+/* https://www.youtube.com/watch?v=oYRda7UtuhA 
+Tutorial på nettside, brukte metode for å lage knapper, tweaket stilen slik at den ble sånn vi ville ha
+*/
 .nav-links{
     text-align: center;
 }
@@ -118,7 +123,7 @@ html{
 }
 /*Welcomepage*/
 
-/*booking*/
+/*booking start*/
 .grid-container-booking {
     display: grid;
     grid-template-areas:
@@ -159,7 +164,7 @@ html{
     grid-area: booking; }
 
 
-/*booking*/
+/*booking slutt*/
 
 /*Nedeboks-foralle*/
 .footer {
@@ -187,10 +192,10 @@ html{
     
     }
     
-    /*booking*/
+    /*booking slutt*/
 
 
-    /*topical*/
+    /*topical start*/
     /* Bilder:
         https://unsplash.com/photos/ourQHRTE2IM , alex kotliarskyi
         https://unsplash.com/photos/VLGdbl42o84 , Maks key
@@ -201,6 +206,10 @@ html{
         background-image: url(Bilder/photo-1504384764586-bb4cdc1707b0.avif);
         background-size: cover;
     }
+    /* kilde for bruk av flexbox: https://www.youtube.com/watch?v=fYq5PXgSsbE */
+    /* All kode for de forskjellige flexboxene. Hvert item er sin egen box. 
+    Lagt til diverse divs for kontrast og vise forskjellige måter og gjøre skygger og bakgrunner.
+    */
     .flexbox-container1{
         display: flex;
         flex-wrap: wrap;
@@ -268,10 +277,10 @@ html{
         background-color: white;
         opacity: 80%;
     }
-     /*topical*/
+     /*topical slutt*/
 
-/*MENU*/
-
+/*MENU start*/
+/*Mye av kode brukt fra Oblig1, ryddet opp i den og brukt grid*/
 .Forretter{
     grid-area: Forrett;
     width: 50%;
@@ -308,9 +317,9 @@ html{
 ul{
     padding-left:0px;
 }
-/*Menu*/
+/*Menu slutt*/
 
- /*Accesibility*/
+ /*Accesibility start*/
 
      /* https://travishorn.com/responsive-grid-in-2-minutes-with-css-grid-layout-4842a41420fe, kilde 
         https://www.freecodecamp.org/news/how-to-create-an-image-gallery-with-css-grid-e0f0fd666a5c/ , kilde
@@ -376,7 +385,7 @@ ul{
         border-radius: 10px;
         grid-area:media;
      }
- /*Accessibility*/
+ /*Accessibility slutt*/
 
     /*media, MÅ VÆRE PÅ BUNN*/
     @media (max-width: 800px){
