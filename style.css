@@ -7,9 +7,9 @@ body{
     /*https://www.freepik.com/free-photo/background-blurry-restaurant-shop-interior_1042964.htm#query=background%20blurry%20restaurant&position=3&from_view=search&track=sph */
     background-image: url(Bilder/background-blurry-restaurant-shop-interior_1203-4031.jpeg);
     background-size: cover;
-
 }
-/*header*/
+
+/*header start*/
 .header { 
     /*Headerbilde: https://www.freepik.com/free-photo/restaurant-interior_1243339.htm#query=restaurant&position=3&from_view=searc*/
     width: auto;
@@ -21,47 +21,52 @@ body{
     grid-area: header;
     width: 100%;
  }
+
  .header-tekst{
     font-size: 10px;
     color: white;
     text-align: right;
  }
+
 html{
         scroll-behavior: smooth;
     }
 /* https://www.youtube.com/watch?v=oYRda7UtuhA 
 Tutorial på nettside, brukte metode for å lage knapper, tweaket stilen slik at den ble sånn vi ville ha
-*/
+Opprettet flere divs innenfor nav links for å gi atributter til de forksjellige delene av knappene f.eks(hover, transition, farge)*/
 .nav-links{
     text-align: center;
 }
+
 .nav-links ul li {
     list-style: none;
     display: inline-block;
     padding: 20px;
-    position: relative;
 }
+
 .nav-links ul li a{
     color:white;
     text-decoration: none;
     font-size: 30px;
-
 }
+
 .nav-links ul li ::after{
     content: "";
     width: 0%;
     height: 2px;
     background: white;
     display: block;
-    margin: auto;
     transition: 0.5s;
 }
+
 .nav-links ul li:hover ::after{
     width: auto;
 }
-/*header*/
+/*header slutt*/
 
-/*Welcomepage*/
+/*Welcomepage start*/
+
+/*Laget grid system for velkommstside*/
 .grid-container{
     display: grid;
     grid-gap: 100px;
@@ -70,15 +75,16 @@ Tutorial på nettside, brukte metode for å lage knapper, tweaket stilen slik at
     "velkommen" 
     "meny"
     "booking"
-    "footer";
-           
+    "footer";       
 }
+
+/*felles css til alle grid områder for hjemsiden*/
 .grid-container > div{
     background-color:rgba(255,255,255, 0.9); opacity: 80%;  
+    border:solid;
     place-self: center;
     text-align: center;
     border-radius: 10px;
-
 }
 
 .velkommen-tekst{
@@ -89,16 +95,14 @@ Tutorial på nettside, brukte metode for å lage knapper, tweaket stilen slik at
 .velkommen-meny{
     grid-area: meny;
     width: 50%;
-    
 }
-
-
 
 .velkommen-booking{
     grid-area: booking;
     width: 50%;
-    
 }
+
+/*utgangspunkt i knapp fra booking siden */
 .velkommen-knapp{
     display: inline-block;
     text-decoration: none; 
@@ -109,19 +113,16 @@ Tutorial på nettside, brukte metode for å lage knapper, tweaket stilen slik at
     cursor: pointer;
     font-size: 30px;
     background-color:black
-   
 }
-
 
 .Overskrift{
     font-size: 70px; 
 }
 
-
 .tekst{
     font-size: 30px; 
 }
-/*Welcomepage*/
+/*Welcomepage slutt*/
 
 /*booking start*/
 .grid-container-booking {
@@ -136,7 +137,7 @@ Tutorial på nettside, brukte metode for å lage knapper, tweaket stilen slik at
     justify-content: space-around;
   }
 
-/*Grid-til-booking-side*/
+/*felles grid til booking side*/
 .grid-container-booking > div {
     background-color: rgba(255, 255, 255, 0.8);
     text-align: center;
@@ -144,7 +145,8 @@ Tutorial på nettside, brukte metode for å lage knapper, tweaket stilen slik at
     font-size: 30px;
     place-self:center;
   }
-    
+
+  /*Infoboks booking*/
   .info { 
     border-style: solid; 
     background-color:rgba(255,255,255, 0.9);
@@ -161,134 +163,148 @@ Tutorial på nettside, brukte metode for å lage knapper, tweaket stilen slik at
     border-radius: 30px;
     max-width: 100%;
     width: 50%;
-    grid-area: booking; }
-
+    grid-area: booking; 
+}
 
 /*booking slutt*/
 
-/*Nedeboks-foralle*/
+/*Footer for alle*/
 .footer {
     text-align: center; 
    /* margin: 50px 50px; */
     background-color:rgba(255,255,255, 0.9);
     border-radius: 30px;
     /*padding: 50px;*/
-    grid-area: footer; }
+    grid-area: footer; 
+}
 
-    .knapp{
-        display: inline-block;
-        text-decoration: none; 
-        color: black;
-        padding: 5px 34px; 
-        background: transparent;
-        position: center;
-        cursor: pointer;
-        font-size: 30px;
-    }
-    .knapp:hover{
-        border: 0.5px solid;
-        background: burlywood;
-        transition: 1s;
+/* knapper for mail, telfon, footer og adresse*/
+.knapp{
+    display: inline-block;
+    text-decoration: none; 
+    color: black;
+    padding: 5px 34px; 
+    background: transparent;
+    position: center;
+    cursor: pointer;
+    font-size: 30px;
+}
+.knapp:hover{
+    border: 0.5px solid;
+    background: burlywood;
+    transition: 1s;  
+}
     
-    }
-    
-    /*booking slutt*/
+/*booking slutt*/
 
 
-    /*topical start*/
+/*topical start*/
+
     /* Bilder:
         https://unsplash.com/photos/ourQHRTE2IM , alex kotliarskyi
         https://unsplash.com/photos/VLGdbl42o84 , Maks key
         https://unsplash.com/photos/ybUtax1fuoc . Natilyn Hicks
         https://unsplash.com/photos/vgQFlPq8tVQ , Artem Maltsev
         */
-    .backgroundimage{
-        background-image: url(Bilder/photo-1504384764586-bb4cdc1707b0.avif);
-        background-size: cover;
-    }
+.backgroundimage{
+    background-image: url(Bilder/photo-1504384764586-bb4cdc1707b0.avif);
+    background-size: cover;
+}
     /* kilde for bruk av flexbox: https://www.youtube.com/watch?v=fYq5PXgSsbE */
     /* All kode for de forskjellige flexboxene. Hvert item er sin egen box. 
     Lagt til diverse divs for kontrast og vise forskjellige måter og gjøre skygger og bakgrunner.
     */
-    .flexbox-container1{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: center;
-        
-    }
-    .flexbox-item1 {
-        width: 1300px;
-        min-height: 200px;
-        margin: 20px;
-        border: 3px;
-        background-image: url(Bilder/photo-1595231861877-9519be503a52.avif);
-        background-position: 10%;
-    }
-    .flexbox-item2 {
-        width: 1300px;
-        min-height: 200px;
-        margin: 20px;
-        border: 3px;
-        background-image: url(Bilder/photo-1622927569053-d7896a1e9c80.avif);
-        background-position: center;
-        
-    }
-    .flexbox-item3 {
-        width: 1300px;
-        height: auto;
-        margin: 20px;
-        border: 3px;
-        background-image: url(Bilder/photo-1565462905102-140e712045aa.avif);
-        background-position: left;
-    }
-    .tekst-flexbox1{
-        color: white;
-        padding: 40px 40px;
-        font-family:'Roboto', sans-serif;
-        text-shadow: 2px 2px 10px white;
-    }
-    .tekst-flexbox2{
-        color: white;
-        padding: 40px 40px;
-        font-family:'Roboto', sans-serif;
-        text-shadow: 2px 2px 10px purple;
-    }
-    .tekst-flexbox3{
-        color: black;
-        padding: 40px 40px;
-        font-family:'Roboto', sans-serif;
-        text-shadow: 2px 2px 15px white;
-    }
-    .phototext{
-        color: black;
-        font-family:'Roboto', sans-serif;
-    }
-    .backgroundphototext{
-        color: white;
-        font-family:'Roboto', sans-serif;
-        background-color: black;
-    }
-    .background1-4{
-        background-color: black;
-        opacity: 80%;
-    }
-    .backgroundkilder{
-        background-color: white;
-        opacity: 80%;
-    }
-     /*topical slutt*/
+.flexbox-container1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flexbox-item1 {
+    width: 1300px;
+    min-height: 200px;
+    margin: 20px;
+    border: 3px;
+    background-image: url(Bilder/photo-1595231861877-9519be503a52.avif);
+    background-position: 10%;
+}
+
+.flexbox-item2 {
+    width: 1300px;
+    min-height: 200px;
+    margin: 20px;
+    border: 3px;
+    background-image: url(Bilder/photo-1622927569053-d7896a1e9c80.avif);
+    background-position: center;   
+}
+
+.flexbox-item3 {
+    width: 1300px;
+    height: auto;
+    margin: 20px;
+    border: 3px;
+    background-image: url(Bilder/photo-1565462905102-140e712045aa.avif);
+    background-position: left;
+}
+
+.tekst-flexbox1{
+    color: white;
+    padding: 40px 40px;
+    font-family:'Roboto', sans-serif;
+    text-shadow: 2px 2px 10px white;
+}
+
+.tekst-flexbox2{
+    color: white;
+    padding: 40px 40px;
+    font-family:'Roboto', sans-serif;
+    text-shadow: 2px 2px 10px purple;
+}
+
+.tekst-flexbox3{
+    color: black;
+    padding: 40px 40px;
+    font-family:'Roboto', sans-serif;
+    text-shadow: 2px 2px 15px white;
+}
+
+.phototext{
+    color: black;
+    font-family:'Roboto', sans-serif;
+}
+
+.backgroundphototext{
+    color: white;
+    font-family:'Roboto', sans-serif;
+    background-color: black;
+}
+
+.background1-4{
+    background-color: black;
+    opacity: 80%;
+}
+
+.backgroundkilder{
+    background-color: white;
+    opacity: 80%;
+}
+
+/*topical slutt*/
 
 /*MENU start*/
+
 /*Mye av kode brukt fra Oblig1, ryddet opp i den og brukt grid*/
 .Forretter{
     grid-area: Forrett;
     width: 50%;
 }
+
 .Hovedretter{
     grid-area: Hovedrett;
     width: 50%;
 }
+
 .Dessert{
     grid-area: Dessert;
     width: 50%;
@@ -305,6 +321,7 @@ Tutorial på nettside, brukte metode for å lage knapper, tweaket stilen slik at
     'footer';
     gap: 10px;
 }
+
 .grid-container-menu > div {
   background-color: rgba(255, 255, 255, 0.8);
   text-align: center;
@@ -317,6 +334,7 @@ Tutorial på nettside, brukte metode for å lage knapper, tweaket stilen slik at
 ul{
     padding-left:0px;
 }
+
 /*Menu slutt*/
 
  /*Accesibility start*/
@@ -325,120 +343,122 @@ ul{
         https://www.freecodecamp.org/news/how-to-create-an-image-gallery-with-css-grid-e0f0fd666a5c/ , kilde
         Columns med grid og hvordan style bilder med css.
      */
-     .accesibility-grid{
-        margin-top: 30px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-areas:
-        'header header'
-        'welcome topical'
-        'booking menu'
-        'text media';
-        grid-gap: 50px;
-        border-radius: 30px;
-     }
-     .accesscolumns{
-        background-color: beige;
-        border-radius: 30px;
-        text-align: center;
-        display: grid;
-     }
-     .img-welcome{
-        width: 100%; 
-        height: 100%; 
-        border-radius: 20px;
-       
-     }
-     .img-meny{
-        width: 100%; 
-        height: 100%; 
-        border-radius: 20px;
-     }
-     .img-topical{
-        width: 100%;
-        height: 100%;
-        border-radius: 20px;
-     }
-     .img-booking{
-        width: 100%;
-        height: 100%;
-        border-radius: 20px;
-     }
-     .text-access{
-        color: black;
-        font-size: 20px;
-     }
-     .image-media-booking{
-        width: 100%;
-        height: 100%;
-        border-radius: 10px;
-     }
-     .image-media-access{
-        width: 100%;
-        height: 100%;
-        border-radius: 10px;
-     }
+.accesibility-grid{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 50px;
+    border-radius: 30px;
+}
+
+.accessibility-grid > div{
+    background-color: beige;
+    border-radius: 30px;
+    text-align: center;
+    display: grid;
+}
+
+.img-welcome{
+    width: 100%; 
+    height: 100%; 
+    border-radius: 20px;   
+}
+
+.img-meny{
+    width: 100%; 
+    height: 100%; 
+    border-radius: 20px;
+}
+
+.img-topical{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.img-booking{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.text-access{
+    border-radius: 20px;
+    background-color:white;
+    color: black;
+    font-size: 20px;
+}
+
+.image-media-booking{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.image-media-access{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
  /*Accessibility slutt*/
 
-    /*media, MÅ VÆRE PÅ BUNN*/
-    @media (max-width: 800px){
-        .velkommen-tekst{
-            width: 100%;
-        }
-        .velkommen-meny{
-            width: 100%;
-        }
-        .velkommen-booking{
-            width: 100%;
-        }
+/*media, MÅ VÆRE PÅ BUNN*/
+@media (max-width: 800px){
+    .velkommen-tekst{
+        width: 100%;
+    }
+    .velkommen-meny{
+        width: 100%;
+    }
+    .velkommen-booking{
+        width: 100%;
+    }
         
+}
+
+@media (max-width: 800px){
+    /*https://www.youtube.com/watch?v=68O6eOGAGqA*/
+    /*Brukte dette for å skalere divene riktig*/
+    .accesibility-grid{
+        grid-template-columns:1fr;
+        grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr;
     }
-    @media (max-width: 800px){
-        /*https://www.youtube.com/watch?v=68O6eOGAGqA*/
-        /*Brukte dette for å skalere divene riktig*/
-        .accesibility-grid{
-            grid-template-columns:1fr;
-            grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr;
-            grid-template-areas:
-            'header'
-            'welcome'
-            'topical'
-            'booking'
-            'menu'
-            'text'
-            'media'
-        }
-        .grid-container-booking{ grid-template-areas:
-            'header'
-            'booking'
-            'info'
-            'footer'
-            ;}
+}
+
+@media (max-width: 800px){
+    /*Booking bredde mobil*/
+    .booking{
+        width:100%;
     }
-    @media (max-width: 800px){
-        .Forretter{
-            width: 100%;
-        }
-        .Hovedretter{
-            width: 100%;
-        }
-        .Dessert{
-            width: 100%;
-        }
-        .Bunntekst{
-            width: 100%;
-        }
-        .Bunntekst1{
-            width: 100%;
-        }
+    .info{
+        width:100%;
+    }
+    /*Booking bredde meny*/
+    .Forretter{
+        width: 100%;
+    }
+    .Hovedretter{
+        width: 100%;
+    }
+    .Dessert{
+        width: 100%;
+    }
+    .Bunntekst{
+        width: 100%;
+    }
+    .Bunntekst1{
+        width: 100%;
+    }
         
-    }
+}
+    
 @media screen and (min-width: 1500px){
-        .flexbox-item1, .flexbox-item2, .flexbox-item3, .flexbox-item4, .flexbox-container1{
-            flex-direction: row;
-        }
-        .header{
-            grid-template-areas: 'header';
-        }
+    .flexbox-item1, .flexbox-item2, .flexbox-item3, .flexbox-item4, .flexbox-container1{
+        flex-direction: row;
+    }
+    .header{
+        grid-template-areas: 'header';
+    }
     }
