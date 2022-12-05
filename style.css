@@ -191,16 +191,15 @@ html{
 
 
     /*topical*/
-
-    .backgroundimage{
-        background-image: url(Bilder/photo-1504384764586-bb4cdc1707b0.avif);
-        background-size: cover;
-        /* 
+    /* Bilder:
         https://unsplash.com/photos/ourQHRTE2IM , alex kotliarskyi
         https://unsplash.com/photos/VLGdbl42o84 , Maks key
         https://unsplash.com/photos/ybUtax1fuoc . Natilyn Hicks
         https://unsplash.com/photos/vgQFlPq8tVQ , Artem Maltsev
         */
+    .backgroundimage{
+        background-image: url(Bilder/photo-1504384764586-bb4cdc1707b0.avif);
+        background-size: cover;
     }
     .flexbox-container1{
         display: flex;
@@ -234,40 +233,27 @@ html{
         background-image: url(Bilder/photo-1565462905102-140e712045aa.avif);
         background-position: left;
     }
-    .flexbox-item4 {
-        height: 100px;
-        width: auto;
-        margin: 15px;
-        background-color: beige;
-    }
-    .tekst12{
+    .tekst-flexbox1{
         color: white;
         padding: 40px 40px;
         font-family:'Roboto', sans-serif;
         text-shadow: 2px 2px 10px white;
     }
-    .tekst1{
+    .tekst-flexbox2{
         color: white;
         padding: 40px 40px;
         font-family:'Roboto', sans-serif;
         text-shadow: 2px 2px 10px purple;
     }
-    .tekst2{
+    .tekst-flexbox3{
         color: black;
         padding: 40px 40px;
         font-family:'Roboto', sans-serif;
         text-shadow: 2px 2px 15px white;
     }
-    .tekst-header{
-        color: black;
-        padding: 40px 40px;
-        font-family:'Roboto', sans-serif;
-        font-size: x-large;
-    }
     .phototext{
         color: black;
         font-family:'Roboto', sans-serif;
-    
     }
     .backgroundphototext{
         color: white;
