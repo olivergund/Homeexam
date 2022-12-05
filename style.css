@@ -438,3 +438,11 @@ ul{
         }
         
     }
+@media screen and (min-width: 1500px){
+        .flexbox-item1, .flexbox-item2, .flexbox-item3, .flexbox-item4, .flexbox-container1{
+            flex-direction: row;
+        }
+        .header{
+            grid-template-areas: 'header';
+        }
+    }
